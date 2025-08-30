@@ -1,2 +1,3 @@
 randeljohngonzales
 Computer Science Student
+Malakas Uminom
