@@ -1,93 +1,140 @@
-# 🧪 GitHub Lab Activity: Branching & Collaboration
+# 🧪 Git + Vue.js Lab Activity (3 Hours)
 
-## 🎯 Objectives
-By the end of this lab, students will be able to:
-1. Clone (checkout) a repository from GitHub.
-2. Create and switch to a new branch.
-3. Stage, commit, and push changes to GitHub.
-4. Open a Pull Request (PR).
-5. Merge changes into the main branch.
+This file contains the detailed steps you need to follow for the lab.
 
 ---
 
-## 🔧 Pre-requisites
-- Git installed on computer (`git --version`).
-- GitHub account created.
-- Access to classroom repository (provided by instructor).
-- IDE/Editor (e.g., VS Code).
-- Internet connection.
+## ⏱️ Time Allocation
+- Git Refresher: **45 minutes**
+- Vue Hands-On: **1 hour 45 minutes**
+- Submission & Reflection: **30 minutes**
 
 ---
 
-## 📌 Step-by-Step Activity
+## Part 1: Git Refresher (45 minutes)
 
-### 1️⃣ Checkout (Clone) Repository
-
-**Windows (PowerShell or CMD):**
+### 1. Checkout Repository
 ```bash
 git clone https://github.com/sep-error/mystudent-playground.git
 cd mystudent-playground
 ```
 
-**Mac/Linux (Terminal):**
+### 2. Create Branch
 ```bash
-git clone https://github.com/sep-error/mystudent-playground.git
-cd mystudent-playground
+git checkout -b feature-yourname-vue
+```
+
+### 3. Update `full-name-vue.md`
+Add your name and favorite programming language:
+```markdown
+- Alice | JavaScript
+- Bob | Python
+- <Your Name> | <Your Language>
+```
+
+Commit and push:
+```bash
+git add full-name-vue.md.md
+git commit -m "Add my name and favorite language"
+git push origin feature-yourname-vue
 ```
 
 ---
 
-### 2️⃣ Create a New Branch
+## Part 2: Vue.js Hands-On (1 hr 45 min)
+
+### 1. Create Vue Project (with Vite)
 ```bash
-git branch
-git checkout -b feature-yourname
+npm create vite@latest vue-lab
+cd vue-lab
+npm install
+npm run dev
+```
+
+Confirm app runs on `http://localhost:5173`.
+
+---
+
+### 2. Create a Component
+Inside `src/components/`, create `fullname.vue`:
+
+```vue
+<template>
+  <div class="card">
+    <h2>{{ name }}</h2>
+    <p>Favorite Language: {{ language }}</p>
+  </div>
+</template>
+
+<script setup>
+defineProps({
+  name: String,
+  language: String
+})
+</script>
+
+<style>
+.card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+}
+</style>
 ```
 
 ---
 
-### 3️⃣ Make a Change, Commit, and Push
-1. Open the repo folder in VS Code.
-2. Create or edit a file (e.g., `students.md`) and add your name.
-3. Stage and commit changes:
-```bash
-git add students.md
-git commit -m "Add [Your Name] to students list"
-```
-4. Push the branch:
-```bash
-git push origin feature-yourname
-```
+### 3. Use Component in `App.vue`
+Replace template:
 
----
+```vue
+<template>
+  <h1>My Classmates</h1>
+  <StudentCard name="Alice" language="JavaScript" />
+  <StudentCard name="Bob" language="Python" />
+  <StudentCard name="Charlie" language="Java" />
+</template>
 
-### 4️⃣ Open a Pull Request (PR)
-1. Go to the GitHub repository in the browser.
-2. GitHub should suggest: 'Compare & Pull Request' — click it.
-3. Add a meaningful PR title and description.
-4. Assign reviewer (your instructor or teammate).
-5. Submit the Pull Request.
-
----
-
-### 5️⃣ Merge the PR
-1. Reviewer/instructor checks the PR.
-2. If approved, click 'Merge Pull Request' → 'Confirm Merge'.
-3. Switch back to `main` branch and pull changes locally:
-```bash
-git checkout main
-git pull origin main
+<script setup>
+import StudentCard from './components/StudentCard.vue'
+</script>
 ```
 
 ---
 
-## 📝 Deliverables
-- Screenshot of your branch pushed on GitHub.
-- Screenshot of your Pull Request.
-- Screenshot after your PR is successfully merged.
+### 4. Extend the Component
+- Add one more prop: `hobby`  
+- Update template to display hobby  
+- Add at least two more student cards with values  
 
 ---
 
-## 🔍 Reflection Questions
-1. Why do teams use branches instead of working directly on `main`?
-2. What is the purpose of a Pull Request in Agile teams?
-3. How does this workflow help prevent errors in large projects?
+## Part 3: Push and Submit (30 minutes)
+
+1. Copy `vue-lab/` into your cloned Git repo under folder **`lab-vue/`**.  
+2. Commit and push:  
+```bash
+git add .
+git commit -m "Add Vue lab with StudentCard component"
+git push origin feature-yourname-vue
+```
+3. Open a Pull Request in GitHub.
+
+---
+
+## Deliverables
+- Updated `fullname-vue.md`  
+- `lab-vue/` folder with working Vue project  
+- Pull Request submitted  
+
+---
+
+## Reflection Questions (in `reflection.md`)
+1. What was the most challenging Git step?  
+2. How did Vue components show reusability?  
+3. How would you extend this app?  
+
+---
+
+🎉 Congratulations! You completed the Git + Vue.js lab!
