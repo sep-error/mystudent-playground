@@ -1,4 +1,3 @@
-Martin Eric P. Mercado
-BSCS-3A
-
-sdfsdffd
+- Alice | JavaScript
+- Bob | Python
+- Martin | Java
