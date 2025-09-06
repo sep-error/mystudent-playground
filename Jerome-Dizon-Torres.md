@@ -1,3 +1,2 @@
-Jerome Dizon Torres
-20 yrs old
-Talaga, Capas, Tarlac
+- Jerome D. Torres | JavaScript
+- Jerome D. Torres | Dart
