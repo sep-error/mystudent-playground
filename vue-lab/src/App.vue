@@ -1,6 +1,7 @@
+
 <template>
   <h1>My Classmates</h1>
-  <JeromeMangune name="Jerome" language="JavaScript" hobby="Painting " />
+  <JeromeMangune name="Jerome" language="JavaScript" hobby="Coding" />
   <JeromeMangune name="Ge" language="Python" hobby="Cycling" />
   <JeromeMangune name="Daryl" language="Java" hobby="Gaming" />
   <JeromeMangune name="John Adrian" language="C++" hobby="Reading" />
