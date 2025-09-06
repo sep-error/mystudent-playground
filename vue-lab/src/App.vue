@@ -1,12 +1,13 @@
 <template>
   <h1>My Classmates</h1>
-  <StudentCard name="Alice" language="JavaScript" hobby="Painting"/>
-  <StudentCard name="Alice" language="JavaScript" hobby="Singing"/>
-  <StudentCard name="Alice" language="JavaScript" hobby="Dancing"/>
-  <StudentCard name="Bob" language="Python" hobby="Playing"/>
-  <StudentCard name="Charlie" language="Java" hobby="Dancing"/>
+  <JeromeMangune name="Jerome" language="JavaScript" hobby="Painting " />
+  <JeromeMangune name="Ge" language="Python" hobby="Cycling" />
+  <JeromeMangune name="Daryl" language="Java" hobby="Gaming" />
+  <JeromeMangune name="John Adrian" language="C++" hobby="Reading" />
+  <JeromeMangune name="James" language="Flutter" hobby="Cooking" />
 </template>
 
 <script setup>
-import StudentCard from './components/aaronpallasigue.vue'
+import JeromeMangune from './components/Jerome-mangune.vue'
+
 </script>
