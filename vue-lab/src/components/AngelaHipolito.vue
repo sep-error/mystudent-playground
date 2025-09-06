@@ -1,8 +1,8 @@
 <template>
   <div class="card">
     <h2>{{ Angela }}</h2>
-    <p>Favorite Language: JAVA{{ language }}</p>
-    <p>Hobby: Spacing Out {{ language }}</p>
+    <p>Favorite Language: {{ JAVA }}</p>
+    <p>Hobby: {{ Spacing Out }}</p>
 
   </div>
 </template>

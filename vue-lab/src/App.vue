@@ -1,7 +1,3 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <h1>My Classmates</h1>
   <StudentCard name="Alice" language="JavaScript" />
@@ -10,7 +6,9 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <script setup>
-import StudentCard from './components/StudentCard.vue'
+import StudentCard from './components/StudentCard.vue' 
+
+const title = 'My Classmates'
 </script>
 
 <style scoped>
