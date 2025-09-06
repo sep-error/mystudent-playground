@@ -1,9 +1,9 @@
+
 <template>
   <div class="card">
-    <h2>{{ Angela }}</h2>
-    <p>Favorite Language: JAVA{{ language }}</p>
-    <p>Hobby: Spacing Out {{ language }}</p>
-
+    <h2>{{ name }}</h2>
+    <p>Favorite Language: {{ language }}</p>
+    <p>Favorite Language: {{ hobby }}</p>
   </div>
 </template>
 
@@ -11,6 +11,7 @@
 defineProps({
   name: String,
   language: String
+   hobby: String
 })
 </script>
 
