@@ -1,1 +1,1 @@
-James Ezrah Mangaoang
+James Hipolito | JavaScript
