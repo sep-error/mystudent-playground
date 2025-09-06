@@ -1,3 +1,3 @@
 Gerald B. Bengco
-Camel
-Balong
+- Gerald | JavaScript
+- Gerald | Python
