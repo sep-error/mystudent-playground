@@ -1,10 +1,13 @@
 import { add, multiply } from './mathUtils.js';
+import { students } from './students.js';
 
-console.log("Add:", add(2, 3));        // 5
-console.log("Multiply:", multiply(4, 2)); // 8
 
-/*import { students } from './modules/students.js';
+
+console.log("Add:", add(2, 3));      
+console.log("Multiply:", multiply(4, 2)); 
+
+console.log(" ");
 
 students.forEach(s => {
   console.log(`${s.name} loves ${s.language}`);
-});*/
+});
