@@ -1,16 +1,18 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
 
 <template>
-  <h1>My Classmates</h1>
-  <StudentCard name="Alice" language="JavaScript" />
-  <StudentCard name="Bob" language="Python" />
-  <StudentCard name="Charlie" language="Java" />
+  <div class="student-list">
+    <StudentCard name="Jenine" age="20" hobby="Sleeping" />
+    <StudentCard name="Angela" age="19" hobby="Thirstrap" />
+    <StudentCard name="Precious" age="20" hobby="Painting" />
+     <StudentCard name="Kaycee" age="20" hobby="Driving" />
+      <StudentCard name="Maryann" age="20" hobby="Roadtrip" />
+  </div>
 </template>
 
 <script setup>
 import StudentCard from './components/StudentCard.vue'
+
+const title = 'Me and My Classmates'
 </script>
 
 <style scoped>
