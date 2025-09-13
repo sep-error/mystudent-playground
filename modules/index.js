@@ -1,11 +1,12 @@
 import { add, multiply } from './mathUtils.js';
 import { students } from './students.js';
+import { calculator } from './calculator.js'; 
 
-
-console.log("Add:", add(2, 3));        // 5
-console.log("Multiply:", multiply(4, 2)); // 8
-
+console.log("Add:", add(2, 3));    
+console.log("Multiply:", multiply(4, 2)); 
 
 students.forEach(s => {
   console.log(`${s.name} loves ${s.language}`);
 });
+
+console.log("2 + 3 =", calculator(2, 3, '+'));
