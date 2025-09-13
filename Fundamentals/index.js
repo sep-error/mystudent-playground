@@ -8,3 +8,8 @@ import { students } from './modules/students.js';
 students.forEach(s => {
   console.log(`${s.name} loves ${s.language}`);
 });
+
+import { getRandomLeader } from './modules/team.js';
+
+console.log("Team Leader:", getRandomLeader());
+
