@@ -1,6 +1,7 @@
 import { add, multiply } from './mathUtils.js';
 import { students } from './students.js';
-import { calculator } from './calculator.js'; 
+import { calculator } from './calculator.js'; import { remarks } from './grade.js';
+
 
 console.log("Add:", add(2, 3));    
 console.log("Multiply:", multiply(4, 2)); 
@@ -10,3 +11,5 @@ students.forEach(s => {
 });
 
 console.log("2 + 3 =", calculator(2, 3, '+'));
+
+remarks(98);
