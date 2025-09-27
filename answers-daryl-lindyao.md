@@ -10,4 +10,4 @@ Explain what a Pull Request (PR) is and why teams use it. (5 pts)
 -A Pull Request (PR) is a way for developers to submit their code changes for review and maintain the code quality.
 
 Explain the purpose of git add and git commit. (10 pts)
--Git add stages changes, and git commit saved those staged changes to your project history with a message 
+-Git add stages changes, and git commit saved those staged changes to your project history with a message
